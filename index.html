@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Overpass">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Interactive rating component</title>
+
+
+</head>
+
+<body>
+
+  <!-- Rating state start -->
+    
+  <main role="main">
+    <section role="banner" class="Cards">
+      <div role="container" class="Container">
+          <div role="contentinfo" class="Card">
+            <div class="svgContainer">
+              <img src="./images/icon-star.svg" alt="">
+              </svg>
+            </div>
+            <h1> How did we do?</h1>
+            <p> 
+              Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
+            </p>
+
+            <div class="button-container">
+
+              <div class="rates-btn">
+                <button class="round" data-value="1">1</button>
+                <button class="round" data-value="2">2</button>
+                <button class="round" data-value="3">3</button>
+                <button class="round" data-value="4">4</button>
+                <button class="round" data-value="5">5</button>
+              </div>
+              
+              <button id="submit" type="button">submit</button>
+
+            </div>
+          </div>
+            <!-- Rating state end -->
+      </div>
+     
+
+        <!-- Thank you state start -->
+
+      <div role="container" class="Container-2">
+          <div role="contentinfo" class="Card">
+            <div class="svgContainer2">
+                <img src="./images/illustration-thank-you.svg" alt="">
+            </div>
+           
+            <div class="button-container">
+              <button id="submit2">
+                You selected <span id="selected-round"></span> out of 5 
+              </button>
+            </div>
+            
+            <h2> Thank you! </h2>
+            <p class="paragraph"> 
+              We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!   
+            </p>
+            <br>
+
+          </div>
+        <!-- Thank you state end -->
+
+      </div>
+    </section>
+  </main>
+
+  <script type="text/javascript" src="./script.js"></script>
+</body>
+
+</html>

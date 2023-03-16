@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400&display=swap');
+:root {
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --MediumGrey: hsl(216, 14%, 21%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+    --Orange: hsl(25, 97%, 53%);
+    --font: 'Overpass',Sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--VeryDarkBlue);
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    place-content: center;
+    justify-content: center;
+    font-family: var(--font);
+    font-size: 0.875rem;
+}
+
+/* Both cards styles */
+.Cards{
+    display: flex;
+}
+
+/* Card container styles */
+.Container{
+    width: 23.1625rem;
+    background-color: var(--DarkBlue);
+    padding: 0.625rem;
+    border-radius: 1.25rem;
+    margin: 5px;
+}
+.Container-2{
+    display: none;
+    text-align: center;
+    width: 23.1625rem;
+    background-color: var(--DarkBlue);
+    padding: 0.625rem;
+    border-radius: 1.25rem;
+    margin: 0.3125rem;
+}
+
+
+/* svg styles */
+.svgContainer {
+    border-radius: 0.625rem;
+    background-color: var(--MediumGrey);
+    padding: 0.125rem;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0.625rem 0;
+  } 
+.svgContainer img{
+    width: 17px; 
+    height: 16px;  
+    margin: 0.625rem;  
+}
+
+.svgContainer2{
+    width:162;
+    height:108;
+    display: inline-block;
+}
+
+/* card info text styles */
+
+.Card{
+    margin: 0.75rem 0.75rem 0 0.75rem;
+}
+.Card h1,h2{
+    font-family: var(--font);
+    font-size: 26px;
+    text-align: left;
+    font-weight: 700;
+    margin: 0.625rem 0;
+    color: var(--White);
+}
+.Card h2{
+    text-align: center;
+}
+.Card p {
+    font-size: 0.9375rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+    color: var(--LightGrey);
+    margin-bottom: 0.625rem;
+}
+
+.Card > .paragraph{
+    margin-bottom: 0.3125rem;
+}
+
+
+/* Buttons Styles */
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 1.25rem;
+}
+.rates-btn{
+    display: flex; 
+    justify-content: center; 
+    width: 100%;
+}
+
+.round{
+    color: var(--White);
+    background-color: var(--MediumGrey);
+    border-radius: 50%;
+    font-family: var(--font);
+    font-weight: 700;
+    width: 20%;
+    height: 3.125rem;
+    margin-right: 5%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.round:last-child {
+    margin-right: 0;
+}
+.round:hover{
+    background-color:var(--Orange);
+}
+.round.active{
+    background-color:var(--LightGrey);
+}
+
+
+
+#submit{
+    margin: 1.25rem;
+    color: var(--White);
+    background-color: var(--Orange);
+    width: 95%;
+    padding: 0.625rem 1.25rem;
+    border:none ;
+    outline: none;
+    border-radius: 3.125rem 3.125rem ;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    font-family: var(--font);
+    letter-spacing: 0.1875rem;
+}
+#submit:hover {
+    background-color:var(--White);
+    color: var(--Orange);
+}
+
+
+#submit2{
+    margin: 1.25rem;
+    color: var(--Orange);
+    background-color: var(--MediumGrey);
+    padding: 0.625rem 1.25rem;
+    border:none ;
+    outline: none;
+    border-radius: 3.125rem 3.125rem ;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--font);
+    letter-spacing: 0.5px;
+}
+
+
+/* Media query for mobile viewport */
+@media only screen and (max-width: 375px) {
+/* Styles for mobile viewport */
+.rounded {
+    padding: 10px 20px;
+    font-size: 14px;
+    margin: 2px;
+}
+
+#submit-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    margin: 10px 0;
+}
+}
+  
